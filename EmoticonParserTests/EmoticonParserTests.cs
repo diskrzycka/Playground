@@ -34,8 +34,8 @@ public class EmoticonParserTests
     [Test]
     public void Parse_ShouldHandleMultipleEmoticons()
     {
-        var input = ":-) :-(";
-        var expected = "😺 😿";
+        var input = ":-) :-( ;*";
+        var expected = "😺 😿 😽";
         var result = _parser.ParseText(input);
 
         Assert.That(expected, Is.EqualTo(result));
